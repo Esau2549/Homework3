@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    grid-template-rows: auto 400px auto;
+    grid-template-columns: 100px auto;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main main"
+    "footer footer footer";
+    
+}
+div{
+    background-color: beige;
+    border: 2px solid #000000;
+    padding: 5px;
+    color: black;
+    text-align: center;
+}
+.header{
+    grid-area: header;   
+}
+.sidebar{
+    display: flex;
+   grid-area: sidebar;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+   
+
+}
+.main-content{
+    grid-area: main;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+.footer{
+    grid-area: footer;
+}
+
+.education{
+    font-size: 1rem;
+    background-color:rgb(234, 175, 175);
+    padding: 10px;   
+}
+
